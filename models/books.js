@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 // Define Schame wit timestamps and disable versionKey
-const booksSchema = new mongoose.Schema({
+const BookSchema = new mongoose.Schema({
     title: { type: String, required: true },
     author: { type: String, required: true },
     published_year: { type: Number, required: true },
@@ -10,4 +10,4 @@ const booksSchema = new mongoose.Schema({
 }, { timestamps: true, versionKey: false });
 
 // Export Model
-module.exports=mongoose.model('books',booksSchema);
+module.exports=mongoose.model('book',BookSchema);
