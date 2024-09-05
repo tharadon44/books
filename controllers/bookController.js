@@ -1,5 +1,5 @@
 // Import Model
-const Book = require("../models/books");
+const book = require("../models/books");
 // Function add and export
 exports.add = async (req, res) => {
     try {
